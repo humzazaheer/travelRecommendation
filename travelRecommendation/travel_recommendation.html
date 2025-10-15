@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Explore Dream Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- === Navigation Bar === -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-plane logo-icon"></i>
+            <span>TravelBloom</span>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <div class="search-section">
+            <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+            <i class="fas fa-search search-icon"></i>
+            <button id="search-btn" class="btn search-btn">Search</button>
+            <button id="reset-btn" class="btn clear-btn">Clear</button>
+        </div>
+    </nav>
+
+    <!-- === Home Page Section === -->
+    <section id="home" class="homepage-content">
+        
+        <!-- Social Media Icons on the left -->
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Hidden result container -->
+        <div id="results-container" class="results-overlay hidden">
+             <button id="clear-results-overlay" class="btn clear-results-btn">X Clear Results</button>
+             <div id="recommendations-display">
+                <!-- Search results will be rendered here -->
+             </div>
+        </div>
+
+        <!-- Main Introduction Block (Visible only when no search is active) -->
+        <div class="intro-box" id="intro-box">
+            <h1 class="main-title">
+                EXPLORE <br>
+                DREAM <br>
+                DESTINATION
+            </h1>
+            
+            <p class="introduction-text">
+                It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+            </p>
+            
+            <a href="#" class="btn book-now-btn">BOOK NOW</a>
+        </div>
+        
+    </section>
+<script src="travel_recommendation.js"></script>
+</body>
+</html>
